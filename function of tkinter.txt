@@ -1,0 +1,8 @@
+TK()
+.geometry()
+.minsize()
+.maxsize()
+
+
+.pack()
+.mainloop(500x300)
