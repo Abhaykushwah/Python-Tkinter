@@ -29,9 +29,17 @@ title_label = Label(text='''def clock():
                 time = time2 + ' ' + time3
         time_label.config(text = time)
         date_label.config(text= date)
-        time_label.after(1000, clock)''',bg='cyan' ,fg="red", padx=100,pady=70, font=( "comicsansms", 25, "bold"), borderwidth=15)
+        time_label.after(1000, clock)''',bg='cyan' ,fg="red", padx=100,pady=70, font=( "comicsansms", 18, "bold"), borderwidth=5, relief=SUNKEN)
 
 
-title_label.pack()
+# Important Pack Options
+# anchor = n, ne, e, se, s, sw, w, nw, center
+# side = op, bottom, left, right
 
+# title_label.pack(side="bottom",anchor="center")
+
+# fill
+# padx
+# pady
+title_label.pack(side="left",fill=Y,padx=10,pady=10)        
 root.mainloop()
